@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+
+android {
+
+    compileSdkVersion 19
+    buildToolsVersion "22.0.0"
+
+    defaultConfig {
+        applicationId 'com.wiggityjiggity.wiggitscanner'
+        minSdkVersion 8
+        targetSdkVersion 19
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    //compile 'com.google.android.gms:play-services:4.1.32'
+    compile 'com.google.android.gms:play-services:4.1.32'
+    //compile 'com.android.support:support-v4:20.+'
+    compile 'com.android.support:support-v4:19.1.0'
+    //compile 'com.android.support:appcompat-v7:21.0.3'
+    //compile 'com.google.android.gms:play-services:6.5.87'
+}
